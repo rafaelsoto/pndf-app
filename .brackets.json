@@ -4,6 +4,8 @@
         "/Users/rafaelsoto/development/github/PNDF/plugins/cordova-plugin-splashscreen/www/splashscreen.js",
         "/Users/rafaelsoto/development/github/PNDF/plugins/cordova-plugin-splashscreen/www/windows/SplashScreenProxy.js",
         "/Users/rafaelsoto/development/github/PNDF/plugins/cordova-plugin-statusbar/src/browser/StatusBarProxy.js",
-        "/Users/rafaelsoto/development/github/PNDF/plugins/cordova-plugin-statusbar/src/windows/StatusBarProxy.js"
+        "/Users/rafaelsoto/development/github/PNDF/plugins/cordova-plugin-statusbar/src/windows/StatusBarProxy.js",
+        "/Users/rafaelsoto/development/github/PNDF/platforms/ios/build/emulator/PNDF.app/www/plugins/ionic-plugin-keyboard/www/ios/keyboard.js",
+        "/Users/rafaelsoto/development/github/PNDF/plugins/cordova-plugin-statusbar/tests/tests.js"
     ]
 }

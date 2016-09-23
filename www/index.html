@@ -48,7 +48,11 @@
         <ion-content>
           <ion-list >
              <ion-item ng-repeat="chat in chats" href="#/aviso/{{chat.id}}">
-             {{ chat.title }}
+             {{ chat.diaSemana }} - {{ chat.nome }}
+             </p>
+             Percurso: {{ chat.percurso }}
+             </p> 
+             Distancia: {{ chat.distancia }}
              </ion-item>
           </ion-list>
         </ion-content>
@@ -60,7 +64,7 @@
          <ion-content>
              <div class="card">
               <div class="item item-text-wrap">
-                {{chat.message}}
+                {{chat.texto}}
               </div>
              </div>
               <div class="card">
