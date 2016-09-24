@@ -1,19 +1,32 @@
 
 angular.module('app', ['ionic'])
 
-.controller('ListagemCtrl', function($scope, BackendService) {
+.controller('ListagemCtrl', function($scope, BackendService, $ionicLoading) {
+    
+    $ionicLoading.show({
+        template: 'Loading...'
+    });
+    
     BackendService.getPercursos()
    .then(function(response) {
      $scope.chats = response;
    });
+    $ionicLoading.hide();
 
 })
 
-.controller('AvisoCtrl', function($scope, $stateParams, BackendService) {
+.controller('AvisoCtrl', function($scope, $stateParams, BackendService, $ionicLoading) {
    $scope.chatId = $stateParams.chatId;
+    
+     $ionicLoading.show({
+        template: 'Loading...'
+    });
+    
    $scope.chat = BackendService.getPercurso($scope.chatId).then(function(response) {
      $scope.chat = response;
    });
+    
+    $ionicLoading.hide();
 })
 
 
